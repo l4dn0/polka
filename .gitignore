@@ -1,0 +1,13 @@
+node_modules/
+Downloads/
+__pycache__/
+*.pyc
+.cache/
+_Полка-загрузка/
+*.exe
+polka-prefs.json
+polka-auth.json
+polka-paths.json
+downloaded.json
+*skip*.txt
+_ffmpeg.zip*

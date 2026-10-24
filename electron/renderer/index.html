@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Полка</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="rail">
+    <div class="brand">
+      <div class="disc" aria-hidden="true"></div>
+      <div>
+        <h1>Полка</h1>
+        <p>alpha 0.9</p>
+      </div>
+    </div>
+    <nav id="tabs"></nav>
+  </aside>
+  <section class="stage">
+    <header class="chrome">
+      <div class="topbar">
+        <svg class="ic search-ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M10.5 4.5a6 6 0 1 0 0 12a6 6 0 1 0 0-12z M15 15l4.5 4.5"/></svg>
+        <input id="search" class="search" type="search" placeholder="Поиск по экрану…" spellcheck="false" />
+        <label class="root-box" title="Корневая папка: сюда раскладывается вся музыка, здесь же downloaded.json и «Плейлисты»">
+          <span>Корневая папка</span>
+          <input id="root-dir" placeholder="не выбрана" spellcheck="false" />
+        </label>
+        <button class="btn small" id="root-pick" type="button">Обзор</button>
+        <button class="gear" id="gear" type="button" aria-label="Настройки" title="Настройки"></button>
+      </div>
+      <p class="live" id="live"></p>
+      <div class="wins">
+        <button id="win-min" type="button" aria-label="Свернуть"></button>
+        <button id="win-max" type="button" aria-label="Развернуть"></button>
+        <button id="win-close" type="button" aria-label="Закрыть"></button>
+      </div>
+    </header>
+    <main id="view"></main>
+    <div class="jobs" id="jobs" hidden aria-live="polite"></div>
+  </section>
+  <audio id="deck"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
